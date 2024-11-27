@@ -1,0 +1,101 @@
+body {
+  font-family: "Roboto" , sans-serif;
+  background-color: #cb021c ;  
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+a{
+  text-decoration: none;
+  color: white ;
+}
+
+.bars , .phone{
+  position: fixed;
+  top: 1.5rem;
+  font-size: 2rem;
+}
+
+.bars {
+  left: 1rem;
+}
+
+.phone{
+right: 1rem;
+}
+.logo{
+  margin: 1rem 0;
+  font-size : 1.7rem;
+  text-align: center;
+}
+.logo i{
+  font-size: 3rem;
+}
+.logo p{
+color: #40020e;
+}
+.carousel-container{
+  position: relative;
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+  margin-top: 3.5rem;
+
+}
+.carousel{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+
+}
+.slide{
+  width: 100vw;
+  height:100px !important;
+  /* position: absolute; */
+  text-align: center;
+}
+
+.slide img{
+  /* object-fit: cover;
+  Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain */
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+.slide h1{
+font-size: 4rem;
+}
+.slide a{
+  border-radius: 5px;
+  background-color: #40020e;
+  padding: 1rem 2rem;
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+}
+.leftArrow , .rightArrow{
+  background-color: transparent;
+  color: black;
+  border: 0;
+  position: absolute;
+  top: 40%;
+  font-size: 4rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.leftArrow{
+  left: 1rem;
+
+}
+.rightArrow{
+  right:2rem;
+}
