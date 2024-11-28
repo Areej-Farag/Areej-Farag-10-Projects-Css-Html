@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Prata", serif;
+}
+
+.container{
+  margin: auto;
+  padding: 1rem;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.logo i{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+time{
+  font-weight: bold;
+  text-align: start;
+  display: block;
+  width: ;
+}
+
+nav{
+  border-top: 2px solid #c4c4c4;
+  border-bottom: 2px solid #c4c4c4;
+  padding: 1rem;
+
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  /* padding: 1rem; */
+}
+.row{
+  display: flex;
+}
+.col{
+  flex: 1;
+  column-rule:1px solid  #000;
+  padding: 1.5rem;
+  width: 30%;
+}
+.col:not(:last-child){
+  border-right: 1px solid #000;
+}
+
+img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding: 1rem ;
+}
+main p{padding: 0.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+main h3{
+  font-weight: bold;
+  padding-bottom: 1rem;
+  /* margin-top: 0; */
+}
+@media screen and (max-width: 768px) {
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 2rem 1rem;  }
+
+  .col:not(:last-child){
+    border-right: none;
+   }
+}
