@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "roboto", serif;
+}
+
+.container{
+  margin: auto;
+  padding: 1rem;
+  width: 1200px;
+  max-width: 100%;
+}
+header{
+  background-image: url(../pictures/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+nav{
+  margin: 3rem 0 1rem 0;
+  /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+nav a.active{
+  color: #007ff4;
+}
+.logo{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+nav .big{
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+.text-container{
+  /* flex-wrap: wrap; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul{
+  display: flex;
+}
+ul a{
+  text-decoration: none;
+  color: black;;
+  padding:1rem  0.5rem;
+}
+.blue{
+  color: #007ff4;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+main .row{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+main .row h2{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  text-align: center;
+
+}
+main .row .col{
+  flex: 1;
+  width: 30%;
+  margin-bottom: 1rem;
+}
+ main img{
+  display: block;
+  margin: auto;
+  width: 90%;
+
+ }
+main button{
+  display: block;
+  margin: auto;
+  padding: 0.8rem 1rem;
+  background-color: #007ff4;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  main .row .col{
+    width: 100% ;
+  }
+  main .row {
+    flex-direction: column;
+  }
+ 
+  .text-container{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .hidden-mobile{
+    display: none;
+  }
+  
+}
